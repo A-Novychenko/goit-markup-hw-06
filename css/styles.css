@@ -103,12 +103,11 @@ img {
 
     background-color: var(--bgc-gray);
     color: var(--primary-color);
-    /* Чи потрібно вказувати, 
-    якщо і так замовчуванням box-shadow: none;  ?*/
+
     transition: background-color var(--animation),
         color var(--animation),
         box-shadow var(--animation);
-        /* box-shadow - для btn-filter */
+    /* box-shadow - для btn-filter */
 }
 
 .btn.secondary:hover,
@@ -434,9 +433,6 @@ img {
     justify-content: center;
     border-radius: 50%;
 
-    /* background-color: transparent; - стоїть
-     за замовчуванням потрібно все ж таки 
-     вказувати для початку переходу(як правильніше)? */
     transition: background-color var(--animation);
 }
 
@@ -682,9 +678,7 @@ img {
 
 .portfolio-link {
     color: inherit;
-    /* Якщо в початку css-переходу не вказувати box-shadow: none;
-то і так працює, так як це стоїть за замовчуванням.
-Як правильно, все ж таки, потрібно прописувати цю властивість ? */
+
     transition: box-shadow var(--animation);
 }
 
