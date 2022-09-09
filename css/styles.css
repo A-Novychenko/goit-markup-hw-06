@@ -779,6 +779,25 @@ img {
     outline: none;
 }
 
+.modal-form-check-icon {
+    width: 16px;
+    height: 15px;
+    border: 2px var(--primary-color) solid;
+    border-radius: 2px;
+}
+
+.modal-form-check-icon-accent {
+    display: none;
+}
+
+.modal-form-checkbox:checked+.modal-form-check-icon>.modal-form-check-icon-accent {
+    display: inline-block;
+}
+
+.modal-form-checkbox:checked+.modal-form-check-icon {
+    border: none;
+}
+
 .modal-form-descr-check {
     line-height: 1.71;
     color: var(--secondary-color);
